@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreenshotCapturer", "ScreenshotCapturer\ScreenshotCapturer.csproj", "{ACE36C23-D0D7-42CA-B600-488AE4E10961}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACE36C23-D0D7-42CA-B600-488AE4E10961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACE36C23-D0D7-42CA-B600-488AE4E10961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACE36C23-D0D7-42CA-B600-488AE4E10961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACE36C23-D0D7-42CA-B600-488AE4E10961}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
