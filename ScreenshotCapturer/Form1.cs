@@ -33,7 +33,6 @@ namespace ScreenshotCapturer
             StringBuilder sb = new StringBuilder();
             sb.Append(DateTime.Now.ToString());
             sb.Replace(":", "");
-            MessageBox.Show(sb.ToString());
             bmpScreenshot.Save(@"C:\1\" + sb.ToString() + ".png", ImageFormat.Png);
         }
     }
