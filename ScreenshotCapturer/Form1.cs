@@ -7,10 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Drawing.Imaging;
 using System.Threading;
-<<<<<<< HEAD
-=======
 using System.Linq;
->>>>>>> upd
 
 namespace ScreenshotCapturer
 {
