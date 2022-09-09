@@ -7,6 +7,10 @@ using System.Text;
 using System.Windows.Forms;
 using System.Drawing.Imaging;
 using System.Threading;
+<<<<<<< HEAD
+=======
+using System.Linq;
+>>>>>>> upd
 
 namespace ScreenshotCapturer
 {
@@ -33,6 +37,12 @@ namespace ScreenshotCapturer
             gfxScreenshot.CopyFromScreen(Screen.PrimaryScreen.Bounds.X, Screen.PrimaryScreen.Bounds.Y, 0, 0, Screen.PrimaryScreen.Bounds.Size, CopyPixelOperation.SourceCopy);
             // Save the screenshot to the specified path that the user has chosen
             bmpScreenshot.Save(@"C:\1\" + (DateTime.Now - dt).TotalMilliseconds + ".png", ImageFormat.Png);
+            // Save the screenshot to the specified path that the user has chose
+            StringBuilder sb = new StringBuilder();
+            sb.Append(DateTime.Now.ToString());
+            sb.Replace(":", "");
+            MessageBox.Show(sb.ToString());
+            bmpScreenshot.Save(@"C:\1\" + sb.ToString() + ".png", ImageFormat.Png);
         }
     }
 }
