@@ -15,14 +15,12 @@ namespace ScreenshotCapturer
     {
         private static Bitmap bmpScreenshot;
         private static Graphics gfxScreenshot;
-        DateTime dt;
 
         public Form1()
         {
             InitializeComponent();
             timer1.Interval = 5000;
             timer1.Start();
-            dt = DateTime.Now;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -32,9 +30,6 @@ namespace ScreenshotCapturer
             gfxScreenshot = Graphics.FromImage(bmpScreenshot);
             // Take the screenshot from the upper left corner to the right bottom corner
             gfxScreenshot.CopyFromScreen(Screen.PrimaryScreen.Bounds.X, Screen.PrimaryScreen.Bounds.Y, 0, 0, Screen.PrimaryScreen.Bounds.Size, CopyPixelOperation.SourceCopy);
-            // Save the screenshot to the specified path that the user has chosen
-            bmpScreenshot.Save(@"C:\1\" + (DateTime.Now - dt).TotalMilliseconds + ".png", ImageFormat.Png);
-            // Save the screenshot to the specified path that the user has chose
             StringBuilder sb = new StringBuilder();
             sb.Append(DateTime.Now.ToString());
             sb.Replace(":", "");
